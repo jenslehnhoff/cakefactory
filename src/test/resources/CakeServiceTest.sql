@@ -1,0 +1,1 @@
+INSERT INTO cake (name, type, description) VALUES ('Donut', 'Krapfen', 'Ist ein Rührteig');
