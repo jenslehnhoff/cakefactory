@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+/cakedb.mv.db
+
+### Mac OS ###
+.DS_Store
