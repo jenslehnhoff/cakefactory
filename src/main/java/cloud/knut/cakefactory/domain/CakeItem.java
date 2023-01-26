@@ -10,7 +10,9 @@ import java.math.BigDecimal;
 @Data
 @RequiredArgsConstructor(staticName = "of")
 @Getter
-public class Cake {
+public class CakeItem {
+
+  @NonNull private final Long cakeId;
 
   @NonNull private final String name;
 

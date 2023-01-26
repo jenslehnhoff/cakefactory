@@ -108,7 +108,11 @@
                                     <p class="card-text">{{description}}</p>
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                                    <div class="float-right">
+                                        <form action="/basket/add/{{cakeId}}" method="post">
+                                            <input type="submit" class="btn btn-primary" name="addItemToBasket" value="Add" />
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

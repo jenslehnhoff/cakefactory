@@ -1,7 +1,6 @@
 package cloud.knut.cakefactory.service;
 
-import cloud.knut.cakefactory.domain.Cake;
-import org.apache.commons.lang3.StringUtils;
+import cloud.knut.cakefactory.domain.CakeItem;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +28,7 @@ public class CatalogServiceIT {
     void  getCakes(){
 
         // when
-        final List<Cake> cakes = catalogService.getCakes();
+        final List<CakeItem> cakes = catalogService.getCakes();
 
         // then
         assertEquals(1, cakes.size());

@@ -1,7 +1,6 @@
 package cloud.knut.cakefactory.controller;
 
-import cloud.knut.cakefactory.controller.CatalogController;
-import cloud.knut.cakefactory.domain.Cake;
+import cloud.knut.cakefactory.domain.CakeItem;
 import cloud.knut.cakefactory.service.CatalogService;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
@@ -60,7 +59,7 @@ class CatalogControllerTest {
     when(catalogService.getCakes())
         .thenReturn(
             Collections.singletonList(
-                Cake.of(
+                CakeItem.of(
                     "Erdbeertorte",
                     "Obsttorte",
                     "Klassische Obsttorten mit Früchten und Tortenguss.",

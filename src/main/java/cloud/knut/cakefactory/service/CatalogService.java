@@ -1,10 +1,10 @@
 package cloud.knut.cakefactory.service;
 
-import cloud.knut.cakefactory.domain.Cake;
+import cloud.knut.cakefactory.domain.CakeItem;
 
 import java.util.List;
 
 public interface CatalogService {
 
-  List<Cake> getCakes();
+  List<CakeItem> getCakes();
 }
